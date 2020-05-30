@@ -1,7 +1,7 @@
 function botonEnviar() {
-    var textAreplazar = document.getElementById("textAreplazar");
+    
     var textcontent = document.getElementById("text-content").value;
-    console.log(textcontent);
+    var textcontent2 = document.getElementById('text-content2');
 
 
 var reGex1 = /(>>..*|>>....... \(OP\)|>>.......|\/#\/ ....... \[X\]|\d{7}|\d{5}|.*png..|.*.....KB ,.*...x....*,|.*jpg..)/gi;
@@ -9,9 +9,9 @@ var reGex1 = /(>>..*|>>....... \(OP\)|>>.......|\/#\/ ....... \[X\]|\d{7}|\d{5}|
 
     var textoTerminado
 
-    textoTerminado = (textcontent.replace(reGex1, '<br> <br>'));
-
-    textAreplazar.innerHTML = textoTerminado;
+    textoTerminado = (textcontent.replace(reGex1, ""));
+    console.log(textcontent);
+    textcontent2.innerHTML ="<br>" + textoTerminado;
 
 }
 
