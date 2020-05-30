@@ -1,7 +1,7 @@
 function botonEnviar() {
     
     var textcontent = document.getElementById("text-content").value;
-    var textcontent2 = document.getElementById('text-content2');
+    var textarea = document.getElementById('textarea');
 
 
 var reGex1 = /(>>..*|>>....... \(OP\)|>>.......|\/#\/ ....... \[X\]|\d{7}|\d{5}|.*png..|.*.....KB ,.*...x....*,|.*jpg..)/gi;
@@ -11,7 +11,11 @@ var reGex1 = /(>>..*|>>....... \(OP\)|>>.......|\/#\/ ....... \[X\]|\d{7}|\d{5}|
 
     textoTerminado = (textcontent.replace(reGex1, ""));
     console.log(textcontent);
-    textcontent2.innerHTML ="<br>" + textoTerminado;
+    textarea.innerHTML = textoTerminado;
 
 }
-
+function copy_to_clipboard(textarea)
+{
+    document.getElementById(textarea).select();
+    document.execCommand('copy');
+}
