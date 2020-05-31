@@ -20,7 +20,8 @@ function botonEnviar2() {
     var textarea = document.getElementById('textarea');
 
 /* Expreciones Regulares */
-var reGex2 = /(Anónimo...*|>>...*|\(..*,{1}x{1}..*|Archivo...*|... KB|.....^MB)/gi;
+var reGex2 = /(Anónimo...*|>>...*|\(..*,{1}x{1}..*|Archivo...*)/gi;
+/*/(Anónimo...*|>>...*|\(..*,{1}x{1}..*|Archivo...*|... KB|.....^MB)/gi;*/ 
 
 
 var textoTerminado
