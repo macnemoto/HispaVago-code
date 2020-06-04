@@ -15,10 +15,13 @@
   color: azure;
 }
 .btn-morado {
-  background-color: #313530;
+  background-color: #181618;
   color: azure;
 }
-
+.btn-morado1 {
+  background-color: #8d099e;
+  color: azure;
+}
 .btn-rojoo {
   background-color: #a01e1e;
   color: azure;
@@ -37,7 +40,10 @@
 }
 
 
-/*body {
-  background-color: #6bb0c2;
+body {
+  background-color: #2f3136;
   
-}*/
+}
+h1, h3 {
+  color: #957DAD;
+}
