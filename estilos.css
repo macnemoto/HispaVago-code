@@ -18,6 +18,10 @@
   background-color: #181618;
   color: azure;
 }
+.btn-play {
+  background-color: #423d42;
+  color: azure;
+}
 .btn-morado1 {
   background-color: #8d099e;
   color: azure;
@@ -46,4 +50,10 @@ body {
 }
 h1, h3 {
   color: #957DAD;
+}
+.ml-6 {
+  margin-left: 430px;
+}
+.ml-7 {
+  margin-left: 550px;
 }
