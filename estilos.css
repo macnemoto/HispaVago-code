@@ -1,7 +1,7 @@
 .trasparencia2 {
 
      /*background-color: rgba(26, 158, 158, 0.096); */
-     background-color: rgba(6, 126, 126, 0.158);
+     background-color: rgba(22, 31, 31, 0.158);
     color: white;
     resize: none;
     border: 5 none;
@@ -10,12 +10,34 @@
 
 }
 
-.neko {
-    margin-top: 20px !important;
-}
+
 .colortext {
   color: azure;
 }
 .btn-morado {
-  background-color: blueviolet;
+  background-color: #313530;
+  color: azure;
 }
+
+.btn-rojoo {
+  background-color: #a01e1e;
+  color: azure;
+}
+.btn-pausa {
+  background-color: #343632;
+  color: azure;
+}
+.btn-seguir {
+  background-color: #5b5e57;
+  color: azure;
+}
+.btn-seguir {
+  background-color: #8f9289;
+  color: azure;
+}
+
+
+/*body {
+  background-color: #6bb0c2;
+  
+}*/

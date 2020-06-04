@@ -1,7 +1,8 @@
 function botonEnviar() {
-    
     var textcontent = document.getElementById("text-content").value;
     var textarea = document.getElementById('textarea');
+
+    
 
 /* Expreciones Regulares */
 var reGex1 = /( VE ........ ........ ..:.. \/#\/ |>>..*|>>....... \(OP\)|>>.......|\/#\/ ....... \[X\]|\d{7}|\d{5}|.*png..|.*.....KB ,.*...x....*,|.*jpg..)/gi;
@@ -40,3 +41,24 @@ function copy_to_clipboard(textarea)
     document.getElementById(textarea).select();
     document.execCommand('copy');
 }
+function nekoVoz(){
+ 
+    var textarea = document.getElementById('textarea').value;
+    responsiveVoice.speak(textarea, "Spanish Male", {rate: 1.1});
+
+
+}
+function nekoVozCacelar() {
+    responsiveVoice.cancel();
+
+}
+function nekoVozPausa() {
+    responsiveVoice.pause();
+
+}
+
+function nekoVozSeguir() {
+    responsiveVoice.resume();
+
+}
+
