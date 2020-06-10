@@ -9,9 +9,10 @@ var reGex1 = /( VE ........ ........ ..:.. \/#\/ |>>..*|>>....... \(OP\)|>>.....
 
 
 var textoTerminado
-
+    
     textoTerminado = (textcontent.replace(reGex1, ""));
     console.log(textcontent);
+    textoTerminado = textoTerminado.trim();
     textarea.innerHTML = textoTerminado;
 
 }
@@ -29,6 +30,7 @@ var textoTerminado
 
     textoTerminado = (textcontent.replace(reGex2, ""));
     console.log(textcontent);
+    textoTerminado = textoTerminado.trim();
     textarea.innerHTML = textoTerminado;
 
 }
