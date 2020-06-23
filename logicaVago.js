@@ -1,3 +1,4 @@
+const logica = require('logica.js')
 function botonEnviar() {
     var textcontent = document.getElementById("text-content").value;
     var textarea = document.getElementById('textarea');
