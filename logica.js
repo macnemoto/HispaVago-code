@@ -7,7 +7,7 @@ const request = require('request-promise');
 async function nekoMinig() {
 
 const $ = await request({
-uri: 'https://www.hispachan.org/ve/res/1701415.html', 
+uri: 'https://www.hispachan.org/ve/res/1701835.html', 
 transform: body => cheerio.load(body)
 
 })
