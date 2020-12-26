@@ -1,87 +1,194 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   <link rel="stylesheet" href="estilos.css">
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-   <link rel="shortcut icon" href="3010536.svg" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="3010536.svg" type="image/x-icon" />
     <title>Hispa Vago</title>
   </head>
-  <body >
-
-
-<div class="container-fluid">
-  <div>
-    <div>
-<h1>Hispa Vago</h1>
-<h3><strong>Estamos para cuando no quieres leer</strong></h3>
+  <body>
+    <div class="container-fluid">
+      <div>
+        <div>
+          <h1 class="text-center" id="h1lol">Hispa Vago</h1>
+          <h3 class="text-center  "id="h3lol">
+            <strong>Estamos para cuando no quieres leer</strong>
+          </h3>
+          <div class="text-center col-12">
+          <img id="imagenPost" src="" alt="" srcset="">
+        </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<p id="textAreplazar"></p>
-     
+    <p id="textAreplazar"></p>
+
     <div class="container">
       <div class="row">
-        <div class="col">
-        <textarea class="mx-center trasparencia2 colortext " id="text-content" name="text-content" rows="20" cols="60" placeholder="Anon aqui! coloca el texto del post "></textarea>
+        <div class="col-sm-12 col-md-6">
+          <textarea
+            class="mx-center trasparencia2 colortext"
+            id="textcontent"
+            name="text-content"
+            rows="20"
+            cols="60"
+            placeholder="Anon aqui! coloca el texto del post "
+          ></textarea>
+          <div class="col-12 text-center mb-4 pt-3">
+            <button
+              type="button"
+              class="btn btn-dark mt-4"
+              onclick="botonEnviar();"
+            >
+              Traformar Texto !
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <textarea
+            class="mx-center trasparencia2 colortext"
+            id="textarea"
+            name="text-content"
+            rows="20"
+            cols="60"
+            placeholder="Texto Tranformado Aparecera aqui "
+          ></textarea>
+          
+          <div class="col-12 text-center">
+            <input
+              type="image"
+              src="clipboar.png"
+              class="image_buscar neko mt-4  copy2"
+              value="Copiar Text"
+              onclick="copy_to_clipboard('textarea');"
+            />
+          
+          
+            <button type="button" class="btn btn-play" onclick="nekoVoz();">
+              <img src="play.png" alt="" srcset="" />
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-pausa"
+              onclick="nekoVozPausa();"
+            >
+              <img src="pausa.png" alt="" srcset="" />
+            </button>
+          
+         
+            <button
+              type="button"
+              class="btn btn-seguir"
+              onclick="nekoVozSeguir();"
+            >
+              Seguir
+            </button>
+            <button
+              type="button"
+              class="btn btn-rojoo"
+              onclick="nekoVozCacelar();"
+            >
+              Detener
+            </button>
+          </div>
+        </div>
+        </div>
       </div>
-        <div class="col">
-        <textarea class=" mx-center trasparencia2 colortext  " id="textarea" name="text-content" rows="20" cols="60" placeholder="Texto Tranformado Aparecera aqui "></textarea>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col6"></div>
+        <div class="col6">
        
       </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5 mt-4 ">
+          <button
+            type="button"
+            class="btn btn-morado1 mr-5 mt-4 text-center"
+            onclick="botonEnviar2();"
+          >
+            Traformar Para /X/ 4chan!
+          </button>
+        </div>
       </div>
     </div>
+   
+    <!--Barra de busqueda-->
 
-    <div class="container">
-      <div class="row">
-        <div class="col6">
-          <button  type="button" class="btn btn-dark  mt-4 " onclick="botonEnviar();">Traformar Texto !</button>
-        </div>
-        <div class="col6">
-          <input  type="image" src="clipboar.png" class="image_buscar neko mt-4 ml-6 copy2" value="Copiar Text"   onclick="copy_to_clipboard('textarea');">
-       
-        </div>
+    <div class="form-group container-fluid">
+      <input
+        type="email"
+        class="form-control"
+        id="potsABuscar"
+        aria-describedby="emailHelp"
+        placeholder="Anon coloca el link del hispa aqui! Ejemplo: https://www.hispachan.org/ve/res/Numero-de-Hilo-Aqui.html"
+      />
+      <small id="emailHelp" class="form-text text-muted"
+        >El programa anon no se hace reposable del fin en que uses esta
+        pagina.</small
+      >
+      <div class="col">
+        <button
+          type="button"
+          class="btn btn-morado1 mr-5 mt-4"
+          onclick="botonEnviar2();"
+        >
+          Traformar
+        </button>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <button  type="button" class="btn btn-morado1 mr-5 mt-4 " onclick="botonEnviar2();">Traformar Para /X/ 4chan!</button>
-        </div>
-      </div>
-    </div>
-        <div class="container">
-          <div class="row ml-7" >
-            <div class="col3 mr-3 mt-3 mb-5">
-              <button  type="button" class="btn btn-play " onclick="nekoVoz();"> <img src="play.png" alt="" srcset=""></button>
-            </div>
-        <div class="col3 mt-3 mb-5">
-          <button  type="button" class="btn btn-pausa " onclick="nekoVozPausa();"><img src="pausa.png" alt="" srcset=""></button>
-        </div>
-        <div class="col3 mx-3 mt-3 mb-5">
-          <button  type="button" class="btn btn-seguir" onclick="nekoVozSeguir();">Seguir</button>
-        </div>
-        <div class="col3 mt-3 mb-5">
-          <button  type="button" class="btn btn-rojoo " onclick="nekoVozCacelar();">Detener</button>
-        </div>
-      </div>
-      </div>
-    
-    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.17.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.17.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <script src="logica.js"></script>
     <script src="https://code.responsivevoice.org/responsivevoice.js?key=02uzInTR"></script>
+    <script src="servidor.js"></script>
     <script src="logicaVago.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
